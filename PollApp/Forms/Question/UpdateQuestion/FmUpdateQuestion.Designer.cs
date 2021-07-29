@@ -56,7 +56,7 @@ namespace PollApp.Forms.Question.UpdateQuestion
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(603, 417);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(778, 544);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -69,24 +69,24 @@ namespace PollApp.Forms.Question.UpdateQuestion
             this.tableLayoutPanel2.Controls.Add(this.LblUpdateQuestion, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.TxtQuestionTitle, 1, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(93, 65);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(119, 84);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 4;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(416, 285);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(538, 374);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // BtnUpdateQuestion
             // 
             this.BtnUpdateQuestion.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnUpdateQuestion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnUpdateQuestion.Location = new System.Drawing.Point(56, 147);
+            this.BtnUpdateQuestion.Location = new System.Drawing.Point(68, 191);
             this.BtnUpdateQuestion.Margin = new System.Windows.Forms.Padding(15, 5, 15, 5);
             this.BtnUpdateQuestion.Name = "BtnUpdateQuestion";
-            this.BtnUpdateQuestion.Size = new System.Drawing.Size(302, 75);
+            this.BtnUpdateQuestion.Size = new System.Drawing.Size(400, 102);
             this.BtnUpdateQuestion.TabIndex = 8;
             this.BtnUpdateQuestion.Text = "Actualizar";
             this.BtnUpdateQuestion.UseVisualStyleBackColor = true;
@@ -97,9 +97,9 @@ namespace PollApp.Forms.Question.UpdateQuestion
             this.LblUpdateQuestion.AutoSize = true;
             this.LblUpdateQuestion.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblUpdateQuestion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblUpdateQuestion.Location = new System.Drawing.Point(44, 0);
+            this.LblUpdateQuestion.Location = new System.Drawing.Point(56, 0);
             this.LblUpdateQuestion.Name = "LblUpdateQuestion";
-            this.LblUpdateQuestion.Size = new System.Drawing.Size(326, 57);
+            this.LblUpdateQuestion.Size = new System.Drawing.Size(424, 74);
             this.LblUpdateQuestion.TabIndex = 9;
             this.LblUpdateQuestion.Text = "Actualizar Pregunta";
             this.LblUpdateQuestion.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -108,10 +108,10 @@ namespace PollApp.Forms.Question.UpdateQuestion
             // 
             this.TxtQuestionTitle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtQuestionTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TxtQuestionTitle.Location = new System.Drawing.Point(44, 60);
+            this.TxtQuestionTitle.Location = new System.Drawing.Point(56, 77);
             this.TxtQuestionTitle.Name = "TxtQuestionTitle";
             this.TxtQuestionTitle.PlaceholderText = "Pregunta";
-            this.TxtQuestionTitle.Size = new System.Drawing.Size(326, 39);
+            this.TxtQuestionTitle.Size = new System.Drawing.Size(424, 39);
             this.TxtQuestionTitle.TabIndex = 10;
             this.TxtQuestionTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -127,7 +127,7 @@ namespace PollApp.Forms.Question.UpdateQuestion
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(84, 56);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(110, 75);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // BtnBack
@@ -136,7 +136,8 @@ namespace PollApp.Forms.Question.UpdateQuestion
             this.BtnBack.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnBack.Location = new System.Drawing.Point(3, 3);
             this.BtnBack.Name = "BtnBack";
-            this.BtnBack.Size = new System.Drawing.Size(78, 22);
+            this.tableLayoutPanel3.SetRowSpan(this.BtnBack, 2);
+            this.BtnBack.Size = new System.Drawing.Size(104, 69);
             this.BtnBack.TabIndex = 0;
             this.BtnBack.Text = "Atrás";
             this.BtnBack.UseVisualStyleBackColor = true;
@@ -147,7 +148,7 @@ namespace PollApp.Forms.Question.UpdateQuestion
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(603, 417);
+            this.ClientSize = new System.Drawing.Size(778, 544);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FmUpdateQuestion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -41,6 +41,28 @@ namespace BusinessLogic.Services.PersonService
             }
         }
 
+        public async Task<bool> DeletePeopleByPollId(int id)
+        {
+            try
+            {
+                var entities = await _context.People.Where(x => x.PollId == id).ToListAsync();
+
+                if (entities == null)
+                {
+                    return false;
+                }
+
+                _context.People.RemoveRange(entities);
+                await _context.SaveChangesAsync();
+
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
         public async Task<Person> FindPerson(int id)
         {
             try

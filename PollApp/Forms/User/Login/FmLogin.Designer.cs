@@ -59,7 +59,7 @@ namespace PollApp
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(509, 311);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(578, 344);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -73,23 +73,23 @@ namespace PollApp
             this.tableLayoutPanel2.Controls.Add(this.TxtUsername, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.BtnLogin, 0, 2);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(104, 65);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(118, 71);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(299, 180);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(340, 200);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // BtnSignup
             // 
             this.BtnSignup.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnSignup.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnSignup.Location = new System.Drawing.Point(159, 130);
+            this.BtnSignup.Location = new System.Drawing.Point(180, 142);
             this.BtnSignup.Margin = new System.Windows.Forms.Padding(10);
             this.BtnSignup.Name = "BtnSignup";
-            this.BtnSignup.Size = new System.Drawing.Size(130, 40);
+            this.BtnSignup.Size = new System.Drawing.Size(150, 48);
             this.BtnSignup.TabIndex = 3;
             this.BtnSignup.Text = "Registrar";
             this.BtnSignup.UseVisualStyleBackColor = true;
@@ -100,11 +100,11 @@ namespace PollApp
             this.tableLayoutPanel2.SetColumnSpan(this.TxtPassword, 2);
             this.TxtPassword.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TxtPassword.Location = new System.Drawing.Point(3, 63);
+            this.TxtPassword.Location = new System.Drawing.Point(3, 69);
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.PasswordChar = '*';
             this.TxtPassword.PlaceholderText = "Contraseña";
-            this.TxtPassword.Size = new System.Drawing.Size(293, 39);
+            this.TxtPassword.Size = new System.Drawing.Size(334, 39);
             this.TxtPassword.TabIndex = 1;
             this.TxtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -116,7 +116,7 @@ namespace PollApp
             this.TxtUsername.Location = new System.Drawing.Point(3, 3);
             this.TxtUsername.Name = "TxtUsername";
             this.TxtUsername.PlaceholderText = "Nombre de Usuario";
-            this.TxtUsername.Size = new System.Drawing.Size(293, 39);
+            this.TxtUsername.Size = new System.Drawing.Size(334, 39);
             this.TxtUsername.TabIndex = 0;
             this.TxtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -124,10 +124,10 @@ namespace PollApp
             // 
             this.BtnLogin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnLogin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnLogin.Location = new System.Drawing.Point(10, 130);
+            this.BtnLogin.Location = new System.Drawing.Point(10, 142);
             this.BtnLogin.Margin = new System.Windows.Forms.Padding(10);
             this.BtnLogin.Name = "BtnLogin";
-            this.BtnLogin.Size = new System.Drawing.Size(129, 40);
+            this.BtnLogin.Size = new System.Drawing.Size(150, 48);
             this.BtnLogin.TabIndex = 2;
             this.BtnLogin.Text = "Entrar";
             this.BtnLogin.UseVisualStyleBackColor = true;
@@ -138,9 +138,9 @@ namespace PollApp
             this.LblLogin.AutoSize = true;
             this.LblLogin.Dock = System.Windows.Forms.DockStyle.Top;
             this.LblLogin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblLogin.Location = new System.Drawing.Point(104, 0);
+            this.LblLogin.Location = new System.Drawing.Point(118, 0);
             this.LblLogin.Name = "LblLogin";
-            this.LblLogin.Size = new System.Drawing.Size(299, 32);
+            this.LblLogin.Size = new System.Drawing.Size(340, 32);
             this.LblLogin.TabIndex = 1;
             this.LblLogin.Text = "Ingresar";
             this.LblLogin.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -172,7 +172,7 @@ namespace PollApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(509, 311);
+            this.ClientSize = new System.Drawing.Size(578, 344);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

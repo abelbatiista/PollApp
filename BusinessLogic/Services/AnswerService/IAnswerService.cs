@@ -11,6 +11,8 @@ namespace BusinessLogic.Services.AnswerService
     {
 
         public Task<bool> DeleteAnswer(int id);
+        public Task<bool> DeleteAnswerByPollId(int id);
+        public Task<bool> DeleteAnswerByQuestionId(int id);
         public Task<Answer> FindAnswer(int id);
         public Task<IEnumerable<Answer>> GetAllAnswers();
         public Task<IEnumerable<CAnswerViewModel>> GetAllAnswersByPollAndPersonId(int pollId, int personId);

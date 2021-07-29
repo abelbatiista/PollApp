@@ -13,16 +13,16 @@ namespace PollApp.Forms.Person_Answer.PollingPeople.IntroducingPeople
 {
     public partial class FmIntroducingPeople : Form
     {
-        private readonly CPersonService _personService;
-
+        
         public int _pollId;
         public int _personId;
+        public string _personName;
 
         public FmIntroducingPeople()
         {
             InitializeComponent();
-            _personService = new CPersonService();
             _personId = 0;
+            _personName = "";
         }
 
         #region Events
@@ -37,9 +37,9 @@ namespace PollApp.Forms.Person_Answer.PollingPeople.IntroducingPeople
             this.Close();
         }
 
-        private async void BtnNext_Click(object sender, EventArgs e)
+        private void BtnNext_Click(object sender, EventArgs e)
         {
-            await NextOperationAfterInsertPerson();
+            NextOperationAfterInsertPerson();
         }
 
         #endregion
@@ -51,47 +51,13 @@ namespace PollApp.Forms.Person_Answer.PollingPeople.IntroducingPeople
             TxtPersonName.Clear();
         }
 
-        private async Task NextOperationAfterInsertPerson()
+        private void NextOperationAfterInsertPerson()
         {
             if(TxtPersonName.TextLength > 0)
             {
-                Person person = new Person
-                {
-                    Name = TxtPersonName.Text,
-                    PollId = _pollId
-                };
-
-                var response = await _personService.InsertPerson(person);
-
-                if (response)
-                {
-                    MessageBox.Show("Insertado con éxito.", "Notificación");
-
-                    var request = await _personService.GetLastPerson();
-
-                    if(request != null)
-                    {
-                        _personId = request.PersonId;
-
-                        if(_personId != 0)
-                        {
-                            ShowPollingPeopleForm();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Error en la base de datos.", "Error");
-                        }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Error en la base de datos.", "Error");
-                    }
-                    
-                }
-                else
-                {
-                    MessageBox.Show("Error en la base de datos.", "Error");
-                }
+                _personName = TxtPersonName.Text;
+                MessageBox.Show("Presiona 'enter' para continuar.", "Notificacion");
+                ShowPollingPeopleForm();
             }
             else
             {
@@ -104,7 +70,7 @@ namespace PollApp.Forms.Person_Answer.PollingPeople.IntroducingPeople
         private void ShowPollingPeopleForm()
         {
 
-            FmPollingPeople pollingPeople = new FmPollingPeople { _pollId = _pollId, _personId = _personId };
+            FmPollingPeople pollingPeople = new FmPollingPeople { _pollId = _pollId, _personId = _personId, _personName = _personName };
             this.Hide();
             pollingPeople.ShowDialog();
 

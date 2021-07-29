@@ -13,6 +13,8 @@ using PollApp.Forms.Poll.UpdatePoll;
 using PollApp.Forms.Poll.InsertPoll.InsertPollWindow;
 using PollApp.Forms.Person_Answer.PolledPeople;
 using PollApp.Forms.Person_Answer.PollingPeople.IntroducingPeople;
+using BusinessLogic.Services.PersonService;
+using BusinessLogic.Services.AnswerService;
 
 namespace PollApp.Forms.Poll
 {
@@ -20,6 +22,8 @@ namespace PollApp.Forms.Poll
     {
         private readonly CPollService _pollService;
         private readonly CQuestionService _questionService;
+        private readonly CPersonService _personService;
+        private readonly CAnswerService _answerService;
 
         public int _userId;
         public int _pollId;
@@ -30,6 +34,8 @@ namespace PollApp.Forms.Poll
             Clear();
             _pollService = new CPollService();
             _questionService = new CQuestionService();
+            _personService = new CPersonService();
+            _answerService = new CAnswerService();
             _pollId = 0;
         }
 
@@ -37,6 +43,7 @@ namespace PollApp.Forms.Poll
 
         private async void FmPoll_Load(object sender, EventArgs e)
         {
+            Clear();
             await LoadPollsByUserId();
         }
 
@@ -108,6 +115,7 @@ namespace PollApp.Forms.Poll
             this.Hide();
             poll.ShowDialog();
             this.Show();
+            Clear();
             await LoadPollsByUserId();
 
         }
@@ -119,6 +127,7 @@ namespace PollApp.Forms.Poll
             this.Hide();
             poll.ShowDialog();
             this.Show();
+            Clear();
             await LoadPollsByUserId();
 
         }
@@ -130,6 +139,7 @@ namespace PollApp.Forms.Poll
             this.Hide();
             introducingPeople.ShowDialog();
             this.Show();
+            Clear();
             await LoadPollsByUserId();
 
         }
@@ -141,6 +151,7 @@ namespace PollApp.Forms.Poll
             this.Hide();
             polledPeople.ShowDialog();
             this.Show();
+            Clear();
             await LoadPollsByUserId();
 
         }
@@ -174,16 +185,34 @@ namespace PollApp.Forms.Poll
 
                 if (dialogResult == DialogResult.OK)
                 {
-                    bool request = await _questionService.DeleteQuestionsByPollId(_pollId);
+                    bool request = await _answerService.DeleteAnswerByPollId(_pollId);
 
                     if (request)
                     {
-                        bool response = await _pollService.DeletePoll(_pollId);
+                        bool request1 = await _questionService.DeleteQuestionsByPollId(_pollId);
 
-                        if (response)
+                        if (request1)
                         {
-                            MessageBox.Show("Eliminado con éxito.", "Notificación");
-                            await LoadPollsByUserId();
+                            bool request2 = await _personService.DeletePeopleByPollId(_pollId);
+
+                            if (request2)
+                            {
+                                bool response = await _pollService.DeletePoll(_pollId);
+
+                                if (response)
+                                {
+                                    MessageBox.Show("Eliminado con éxito.", "Notificación");
+                                    await LoadPollsByUserId();
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Ha ocurrido un error.", "Error");
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Ha ocurrido un error.", "Error");
+                            }
                         }
                         else
                         {

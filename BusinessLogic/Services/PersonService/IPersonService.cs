@@ -11,6 +11,7 @@ namespace BusinessLogic.Services.PersonService
     {
 
         public Task<bool> DeletePerson(int id);
+        public Task<bool> DeletePeopleByPollId(int id);
         public Task<Person> FindPerson(int id);
         public Task<IEnumerable<Person>> GetAllPeople();
         public Task<IEnumerable<CPolledPeopleViewModel>> GetAllPeopleViewModelByPollId(int pollId);

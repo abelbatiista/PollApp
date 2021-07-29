@@ -31,8 +31,8 @@ namespace PollApp.Forms.Person_Answer.PolledPeople.ShowQuestionAnswer
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.DgvQuestionAnswer = new System.Windows.Forms.DataGridView();
             this.BtnBack = new System.Windows.Forms.Button();
+            this.DgvQuestionAnswer = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvQuestionAnswer)).BeginInit();
@@ -53,7 +53,7 @@ namespace PollApp.Forms.Person_Answer.PolledPeople.ShowQuestionAnswer
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(550, 384);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(678, 444);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -70,6 +70,19 @@ namespace PollApp.Forms.Person_Answer.PolledPeople.ShowQuestionAnswer
             this.tableLayoutPanel2.Size = new System.Drawing.Size(104, 70);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
+            // BtnBack
+            // 
+            this.BtnBack.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnBack.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnBack.Location = new System.Drawing.Point(3, 3);
+            this.BtnBack.Name = "BtnBack";
+            this.tableLayoutPanel2.SetRowSpan(this.BtnBack, 2);
+            this.BtnBack.Size = new System.Drawing.Size(98, 64);
+            this.BtnBack.TabIndex = 0;
+            this.BtnBack.Text = "Atrás";
+            this.BtnBack.UseVisualStyleBackColor = true;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
+            // 
             // DgvQuestionAnswer
             // 
             this.DgvQuestionAnswer.AllowUserToAddRows = false;
@@ -78,35 +91,24 @@ namespace PollApp.Forms.Person_Answer.PolledPeople.ShowQuestionAnswer
             this.DgvQuestionAnswer.AllowUserToResizeRows = false;
             this.DgvQuestionAnswer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvQuestionAnswer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DgvQuestionAnswer.Location = new System.Drawing.Point(113, 79);
+            this.DgvQuestionAnswer.Location = new System.Drawing.Point(138, 91);
             this.DgvQuestionAnswer.Name = "DgvQuestionAnswer";
             this.DgvQuestionAnswer.ReadOnly = true;
             this.DgvQuestionAnswer.RowHeadersWidth = 62;
             this.DgvQuestionAnswer.RowTemplate.Height = 33;
             this.DgvQuestionAnswer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvQuestionAnswer.Size = new System.Drawing.Size(324, 224);
+            this.DgvQuestionAnswer.Size = new System.Drawing.Size(400, 260);
             this.DgvQuestionAnswer.TabIndex = 1;
-            // 
-            // BtnBack
-            // 
-            this.BtnBack.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BtnBack.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnBack.Location = new System.Drawing.Point(3, 3);
-            this.BtnBack.Name = "BtnBack";
-            this.BtnBack.Size = new System.Drawing.Size(98, 29);
-            this.BtnBack.TabIndex = 0;
-            this.BtnBack.Text = "Atrás";
-            this.BtnBack.UseVisualStyleBackColor = true;
-            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // FmShowQuestionAnswer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(550, 384);
+            this.ClientSize = new System.Drawing.Size(678, 444);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FmShowQuestionAnswer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Personas encuestadas";
             this.Load += new System.EventHandler(this.FmShowQuestionAnswer_Load);
             this.tableLayoutPanel1.ResumeLayout(false);

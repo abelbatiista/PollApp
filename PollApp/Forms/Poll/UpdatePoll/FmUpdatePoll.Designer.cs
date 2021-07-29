@@ -62,7 +62,7 @@ namespace PollApp.Forms.Poll.UpdatePoll
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(684, 461);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(778, 544);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // LblQuestions
@@ -70,9 +70,9 @@ namespace PollApp.Forms.Poll.UpdatePoll
             this.LblQuestions.AutoSize = true;
             this.LblQuestions.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblQuestions.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblQuestions.Location = new System.Drawing.Point(139, 0);
+            this.LblQuestions.Location = new System.Drawing.Point(158, 0);
             this.LblQuestions.Name = "LblQuestions";
-            this.LblQuestions.Size = new System.Drawing.Size(404, 92);
+            this.LblQuestions.Size = new System.Drawing.Size(460, 108);
             this.LblQuestions.TabIndex = 4;
             this.LblQuestions.Text = "Preguntas";
             this.LblQuestions.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -85,13 +85,13 @@ namespace PollApp.Forms.Poll.UpdatePoll
             this.DgvQuestion.AllowUserToResizeRows = false;
             this.DgvQuestion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvQuestion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DgvQuestion.Location = new System.Drawing.Point(139, 95);
+            this.DgvQuestion.Location = new System.Drawing.Point(158, 111);
             this.DgvQuestion.Name = "DgvQuestion";
             this.DgvQuestion.ReadOnly = true;
             this.DgvQuestion.RowHeadersWidth = 62;
             this.DgvQuestion.RowTemplate.Height = 33;
             this.DgvQuestion.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvQuestion.Size = new System.Drawing.Size(404, 270);
+            this.DgvQuestion.Size = new System.Drawing.Size(460, 320);
             this.DgvQuestion.TabIndex = 0;
             this.DgvQuestion.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvQuestion_CellClick);
             // 
@@ -105,22 +105,22 @@ namespace PollApp.Forms.Poll.UpdatePoll
             this.tableLayoutPanel2.Controls.Add(this.BtnUpdateQuestion, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.BtnInsertQuestion, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(139, 371);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(158, 437);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(404, 87);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(460, 104);
             this.tableLayoutPanel2.TabIndex = 5;
             // 
             // BtnUnselectQuestion
             // 
             this.BtnUnselectQuestion.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnUnselectQuestion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnUnselectQuestion.Location = new System.Drawing.Point(207, 48);
+            this.BtnUnselectQuestion.Location = new System.Drawing.Point(235, 57);
             this.BtnUnselectQuestion.Margin = new System.Windows.Forms.Padding(5);
             this.BtnUnselectQuestion.Name = "BtnUnselectQuestion";
-            this.BtnUnselectQuestion.Size = new System.Drawing.Size(192, 34);
+            this.BtnUnselectQuestion.Size = new System.Drawing.Size(220, 42);
             this.BtnUnselectQuestion.TabIndex = 3;
             this.BtnUnselectQuestion.Text = "Deseleccionar";
             this.BtnUnselectQuestion.UseVisualStyleBackColor = true;
@@ -130,10 +130,10 @@ namespace PollApp.Forms.Poll.UpdatePoll
             // 
             this.BtnDelete.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnDelete.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnDelete.Location = new System.Drawing.Point(5, 48);
+            this.BtnDelete.Location = new System.Drawing.Point(5, 57);
             this.BtnDelete.Margin = new System.Windows.Forms.Padding(5);
             this.BtnDelete.Name = "BtnDelete";
-            this.BtnDelete.Size = new System.Drawing.Size(192, 34);
+            this.BtnDelete.Size = new System.Drawing.Size(220, 42);
             this.BtnDelete.TabIndex = 2;
             this.BtnDelete.Text = "Eliminar";
             this.BtnDelete.UseVisualStyleBackColor = true;
@@ -143,10 +143,10 @@ namespace PollApp.Forms.Poll.UpdatePoll
             // 
             this.BtnUpdateQuestion.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnUpdateQuestion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnUpdateQuestion.Location = new System.Drawing.Point(207, 5);
+            this.BtnUpdateQuestion.Location = new System.Drawing.Point(235, 5);
             this.BtnUpdateQuestion.Margin = new System.Windows.Forms.Padding(5);
             this.BtnUpdateQuestion.Name = "BtnUpdateQuestion";
-            this.BtnUpdateQuestion.Size = new System.Drawing.Size(192, 33);
+            this.BtnUpdateQuestion.Size = new System.Drawing.Size(220, 42);
             this.BtnUpdateQuestion.TabIndex = 1;
             this.BtnUpdateQuestion.Text = "Actualizar";
             this.BtnUpdateQuestion.UseVisualStyleBackColor = true;
@@ -159,7 +159,7 @@ namespace PollApp.Forms.Poll.UpdatePoll
             this.BtnInsertQuestion.Location = new System.Drawing.Point(5, 5);
             this.BtnInsertQuestion.Margin = new System.Windows.Forms.Padding(5);
             this.BtnInsertQuestion.Name = "BtnInsertQuestion";
-            this.BtnInsertQuestion.Size = new System.Drawing.Size(192, 33);
+            this.BtnInsertQuestion.Size = new System.Drawing.Size(220, 42);
             this.BtnInsertQuestion.TabIndex = 0;
             this.BtnInsertQuestion.Text = "Insertar";
             this.BtnInsertQuestion.UseVisualStyleBackColor = true;
@@ -177,7 +177,7 @@ namespace PollApp.Forms.Poll.UpdatePoll
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(130, 86);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(149, 102);
             this.tableLayoutPanel3.TabIndex = 6;
             // 
             // BtnBack
@@ -186,7 +186,7 @@ namespace PollApp.Forms.Poll.UpdatePoll
             this.BtnBack.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnBack.Location = new System.Drawing.Point(3, 3);
             this.BtnBack.Name = "BtnBack";
-            this.BtnBack.Size = new System.Drawing.Size(124, 37);
+            this.BtnBack.Size = new System.Drawing.Size(143, 45);
             this.BtnBack.TabIndex = 0;
             this.BtnBack.Text = "Atrás";
             this.BtnBack.UseVisualStyleBackColor = true;
@@ -197,7 +197,7 @@ namespace PollApp.Forms.Poll.UpdatePoll
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(684, 461);
+            this.ClientSize = new System.Drawing.Size(778, 544);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FmUpdatePoll";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

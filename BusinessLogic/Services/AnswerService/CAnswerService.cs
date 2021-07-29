@@ -41,6 +41,54 @@ namespace BusinessLogic.Services.AnswerService
             }
         }
 
+        public async Task<bool> DeleteAnswerByPollId(int id)
+        {
+
+            try
+            {
+                var entities = await _context.Answers.Where(x => x.PollId == id).ToListAsync();
+
+                if (entities == null)
+                {
+                    return false;
+                }
+
+                _context.Answers.RemoveRange(entities);
+                await _context.SaveChangesAsync();
+
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+
+        }
+
+        public async Task<bool> DeleteAnswerByQuestionId(int id)
+        {
+
+            try
+            {
+                var entities = await _context.Answers.Where(x => x.QuestionId == id).ToListAsync();
+
+                if (entities == null)
+                {
+                    return false;
+                }
+
+                _context.Answers.RemoveRange(entities);
+                await _context.SaveChangesAsync();
+
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+
+        }
+
         public async Task<Answer> FindAnswer(int id)
         {
             try

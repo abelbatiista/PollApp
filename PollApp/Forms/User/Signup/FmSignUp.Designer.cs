@@ -61,7 +61,7 @@ namespace PollApp
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(684, 461);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(778, 544);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -76,7 +76,7 @@ namespace PollApp
             this.tableLayoutPanel2.Controls.Add(this.TxtName, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.BtnSignUp, 0, 5);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(105, 72);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(119, 84);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 6;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
@@ -85,7 +85,7 @@ namespace PollApp
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(472, 316);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(538, 374);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // TxtConfirmPassword
@@ -93,11 +93,11 @@ namespace PollApp
             this.tableLayoutPanel2.SetColumnSpan(this.TxtConfirmPassword, 2);
             this.TxtConfirmPassword.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtConfirmPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TxtConfirmPassword.Location = new System.Drawing.Point(3, 211);
+            this.TxtConfirmPassword.Location = new System.Drawing.Point(3, 251);
             this.TxtConfirmPassword.Name = "TxtConfirmPassword";
             this.TxtConfirmPassword.PasswordChar = '*';
             this.TxtConfirmPassword.PlaceholderText = "Confirmar Contraseña";
-            this.TxtConfirmPassword.Size = new System.Drawing.Size(466, 39);
+            this.TxtConfirmPassword.Size = new System.Drawing.Size(532, 39);
             this.TxtConfirmPassword.TabIndex = 4;
             this.TxtConfirmPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TxtConfirmPassword.TextChanged += new System.EventHandler(this.TxtConfirmPassword_TextChanged);
@@ -107,11 +107,11 @@ namespace PollApp
             this.tableLayoutPanel2.SetColumnSpan(this.TxtPassword, 2);
             this.TxtPassword.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TxtPassword.Location = new System.Drawing.Point(3, 159);
+            this.TxtPassword.Location = new System.Drawing.Point(3, 189);
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.PasswordChar = '*';
             this.TxtPassword.PlaceholderText = "Contraseña";
-            this.TxtPassword.Size = new System.Drawing.Size(466, 39);
+            this.TxtPassword.Size = new System.Drawing.Size(532, 39);
             this.TxtPassword.TabIndex = 3;
             this.TxtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TxtPassword.TextChanged += new System.EventHandler(this.TxtPassword_TextChanged);
@@ -121,10 +121,10 @@ namespace PollApp
             this.tableLayoutPanel2.SetColumnSpan(this.TxtUsername, 2);
             this.TxtUsername.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtUsername.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TxtUsername.Location = new System.Drawing.Point(3, 107);
+            this.TxtUsername.Location = new System.Drawing.Point(3, 127);
             this.TxtUsername.Name = "TxtUsername";
             this.TxtUsername.PlaceholderText = "Nombre de Usuario";
-            this.TxtUsername.Size = new System.Drawing.Size(466, 39);
+            this.TxtUsername.Size = new System.Drawing.Size(532, 39);
             this.TxtUsername.TabIndex = 2;
             this.TxtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TxtUsername.TextChanged += new System.EventHandler(this.TxtUsername_TextChanged);
@@ -134,10 +134,10 @@ namespace PollApp
             this.tableLayoutPanel2.SetColumnSpan(this.TxtLastname, 2);
             this.TxtLastname.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtLastname.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TxtLastname.Location = new System.Drawing.Point(3, 55);
+            this.TxtLastname.Location = new System.Drawing.Point(3, 65);
             this.TxtLastname.Name = "TxtLastname";
             this.TxtLastname.PlaceholderText = "Apellido";
-            this.TxtLastname.Size = new System.Drawing.Size(466, 39);
+            this.TxtLastname.Size = new System.Drawing.Size(532, 39);
             this.TxtLastname.TabIndex = 1;
             this.TxtLastname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TxtLastname.TextChanged += new System.EventHandler(this.TxtLastname_TextChanged);
@@ -150,7 +150,7 @@ namespace PollApp
             this.TxtName.Location = new System.Drawing.Point(3, 3);
             this.TxtName.Name = "TxtName";
             this.TxtName.PlaceholderText = "Nombre";
-            this.TxtName.Size = new System.Drawing.Size(466, 39);
+            this.TxtName.Size = new System.Drawing.Size(532, 39);
             this.TxtName.TabIndex = 0;
             this.TxtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TxtName.TextChanged += new System.EventHandler(this.TxtName_TextChanged);
@@ -161,10 +161,10 @@ namespace PollApp
             this.BtnSignUp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnSignUp.Enabled = false;
             this.BtnSignUp.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnSignUp.Location = new System.Drawing.Point(30, 265);
+            this.BtnSignUp.Location = new System.Drawing.Point(30, 315);
             this.BtnSignUp.Margin = new System.Windows.Forms.Padding(30, 5, 30, 5);
             this.BtnSignUp.Name = "BtnSignUp";
-            this.BtnSignUp.Size = new System.Drawing.Size(412, 46);
+            this.BtnSignUp.Size = new System.Drawing.Size(478, 54);
             this.BtnSignUp.TabIndex = 5;
             this.BtnSignUp.Text = "Registrar";
             this.BtnSignUp.UseVisualStyleBackColor = true;
@@ -172,11 +172,11 @@ namespace PollApp
             // 
             // BtnBack
             // 
-            this.BtnBack.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnBack.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnBack.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnBack.Location = new System.Drawing.Point(3, 3);
             this.BtnBack.Name = "BtnBack";
-            this.BtnBack.Size = new System.Drawing.Size(96, 34);
+            this.BtnBack.Size = new System.Drawing.Size(110, 75);
             this.BtnBack.TabIndex = 1;
             this.BtnBack.Text = "Atrás";
             this.BtnBack.UseVisualStyleBackColor = true;
@@ -186,9 +186,9 @@ namespace PollApp
             // 
             this.LblSignup.AutoSize = true;
             this.LblSignup.Dock = System.Windows.Forms.DockStyle.Top;
-            this.LblSignup.Location = new System.Drawing.Point(105, 0);
+            this.LblSignup.Location = new System.Drawing.Point(119, 0);
             this.LblSignup.Name = "LblSignup";
-            this.LblSignup.Size = new System.Drawing.Size(472, 32);
+            this.LblSignup.Size = new System.Drawing.Size(538, 32);
             this.LblSignup.TabIndex = 2;
             this.LblSignup.Text = "Registrar";
             this.LblSignup.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -197,7 +197,7 @@ namespace PollApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(684, 461);
+            this.ClientSize = new System.Drawing.Size(778, 544);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FmSignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

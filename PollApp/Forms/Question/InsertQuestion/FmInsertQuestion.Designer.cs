@@ -57,7 +57,7 @@ namespace PollApp.Forms.Question.InsertQuestion
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1216, 916);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(778, 544);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -70,14 +70,14 @@ namespace PollApp.Forms.Question.InsertQuestion
             this.tableLayoutPanel2.Controls.Add(this.BtnInsertar, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.TxtQuestionTitle, 1, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(185, 140);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(119, 84);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 4;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(845, 635);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(538, 374);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // LblInsertQuestion
@@ -85,9 +85,9 @@ namespace PollApp.Forms.Question.InsertQuestion
             this.LblInsertQuestion.AutoSize = true;
             this.LblInsertQuestion.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblInsertQuestion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblInsertQuestion.Location = new System.Drawing.Point(87, 0);
+            this.LblInsertQuestion.Location = new System.Drawing.Point(56, 0);
             this.LblInsertQuestion.Name = "LblInsertQuestion";
-            this.LblInsertQuestion.Size = new System.Drawing.Size(670, 127);
+            this.LblInsertQuestion.Size = new System.Drawing.Size(424, 74);
             this.LblInsertQuestion.TabIndex = 6;
             this.LblInsertQuestion.Text = "Insertar Pregunta";
             this.LblInsertQuestion.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -96,10 +96,10 @@ namespace PollApp.Forms.Question.InsertQuestion
             // 
             this.BtnInsertar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnInsertar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnInsertar.Location = new System.Drawing.Point(99, 322);
+            this.BtnInsertar.Location = new System.Drawing.Point(68, 191);
             this.BtnInsertar.Margin = new System.Windows.Forms.Padding(15, 5, 15, 5);
             this.BtnInsertar.Name = "BtnInsertar";
-            this.BtnInsertar.Size = new System.Drawing.Size(646, 180);
+            this.BtnInsertar.Size = new System.Drawing.Size(400, 102);
             this.BtnInsertar.TabIndex = 0;
             this.BtnInsertar.Text = "Insertar";
             this.BtnInsertar.UseVisualStyleBackColor = true;
@@ -109,10 +109,10 @@ namespace PollApp.Forms.Question.InsertQuestion
             // 
             this.TxtQuestionTitle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtQuestionTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TxtQuestionTitle.Location = new System.Drawing.Point(87, 130);
+            this.TxtQuestionTitle.Location = new System.Drawing.Point(56, 77);
             this.TxtQuestionTitle.Name = "TxtQuestionTitle";
             this.TxtQuestionTitle.PlaceholderText = "Pregunta";
-            this.TxtQuestionTitle.Size = new System.Drawing.Size(670, 39);
+            this.TxtQuestionTitle.Size = new System.Drawing.Size(424, 39);
             this.TxtQuestionTitle.TabIndex = 1;
             this.TxtQuestionTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -122,12 +122,13 @@ namespace PollApp.Forms.Question.InsertQuestion
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.Controls.Add(this.BtnBack, 0, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(74, 54);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(110, 75);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // BtnBack
@@ -136,7 +137,8 @@ namespace PollApp.Forms.Question.InsertQuestion
             this.BtnBack.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnBack.Location = new System.Drawing.Point(3, 3);
             this.BtnBack.Name = "BtnBack";
-            this.BtnBack.Size = new System.Drawing.Size(68, 21);
+            this.tableLayoutPanel3.SetRowSpan(this.BtnBack, 2);
+            this.BtnBack.Size = new System.Drawing.Size(104, 69);
             this.BtnBack.TabIndex = 0;
             this.BtnBack.Text = "Atrás";
             this.BtnBack.UseVisualStyleBackColor = true;
@@ -146,7 +148,7 @@ namespace PollApp.Forms.Question.InsertQuestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1216, 916);
+            this.ClientSize = new System.Drawing.Size(778, 544);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FmInsertQuestion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

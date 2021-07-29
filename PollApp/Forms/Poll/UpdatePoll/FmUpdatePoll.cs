@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BusinessLogic.Services.AnswerService;
 using BusinessLogic.Services.QuestionService;
 using PollApp.Forms.Question.InsertQuestion;
 using PollApp.Forms.Question.UpdateQuestion;
@@ -15,6 +16,8 @@ namespace PollApp.Forms.Poll.UpdatePoll
     public partial class FmUpdatePoll : Form
     {
         private readonly CQuestionService _questionService;
+        private readonly CAnswerService _answerService;
+
         public int _pollId;
         public int _questionId;
 
@@ -22,6 +25,7 @@ namespace PollApp.Forms.Poll.UpdatePoll
         {
             InitializeComponent();
             _questionService = new CQuestionService();
+            _answerService = new CAnswerService();
             _questionId = 0;
             Clear();
         }
@@ -88,6 +92,7 @@ namespace PollApp.Forms.Poll.UpdatePoll
             this.Hide();
             question.ShowDialog();
             this.Show();
+            Clear();
             await LoadQuestionsByPollId();
 
         }
@@ -99,6 +104,7 @@ namespace PollApp.Forms.Poll.UpdatePoll
             this.Hide();
             question.ShowDialog();
             this.Show();
+            Clear();
             await LoadQuestionsByPollId();
 
         }
@@ -130,13 +136,22 @@ namespace PollApp.Forms.Poll.UpdatePoll
 
                 if (dialogResult == DialogResult.OK)
                 {
-                    bool response = await _questionService.DeleteQuestion(_questionId);
+                    bool request = await _answerService.DeleteAnswerByQuestionId(_questionId);
 
-                    if (response)
+                    if (request)
                     {
-                        MessageBox.Show("Eliminado con éxito.", "Notificación");
-                        await LoadQuestionsByPollId();
-                        Clear();
+                        bool response = await _questionService.DeleteQuestion(_questionId);
+
+                        if (response)
+                        {
+                            MessageBox.Show("Eliminado con éxito.", "Notificación");
+                            await LoadQuestionsByPollId();
+                            Clear();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ha ocurrido un error.", "Error");
+                        }
                     }
                     else
                     {
